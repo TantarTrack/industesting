@@ -1,5 +1,9 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+}
 .automotive-main{
-    height: 100dvh;
+    height: 130vh;
     background-image: url(../assets/automotivepage-background.webp);
     width: 100%;
     margin: 0 auto;
@@ -11,7 +15,7 @@
 }
 .automotive-shado{
     position: relative;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.543);
     z-index: 2;
@@ -23,7 +27,7 @@
     color:white;
     max-width: 1200px;
     padding: 10px;
-    height: 100dvh;
+    height: 100vh;
     
   
 }
