@@ -1,6 +1,8 @@
 import "../induspagestyle/automotive.css"
 import { Link } from "react-router-dom";
 
+import Automotivecardservices from "./auto-serv-type";
+
 const Automotive = () =>{
     return(
         <div>
@@ -31,8 +33,9 @@ const Automotive = () =>{
                 <div className="auto-sol-tab">
                     <div className="auto-sol-tab-heading">
                      <h1>
-                     Expert IT Solutions Customized for the Automotive Sector
+                     Expert IT Solutions Customized for the Automotive Sector.
                      </h1>
+                    <Automotivecardservices/>
                     </div>
                 </div>
             </div>

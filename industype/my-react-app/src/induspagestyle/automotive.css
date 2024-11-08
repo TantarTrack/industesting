@@ -1,9 +1,12 @@
-body{
+/* General Body Styling */
+body {
     margin: 0 auto;
     width: 100%;
 }
-.automotive-main{
-    height: 130vh;
+
+/* Main Container with Background Image */
+.automotive-main {
+    height: 100vh;
     background-image: url(../assets/automotivepage-background.webp);
     width: 100%;
     margin: 0 auto;
@@ -11,33 +14,35 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    
+    animation: fadeIn 1.5s ease-in-out; /* Background fade-in animation */
 }
-.automotive-shado{
+
+/* Background Overlay */
+.automotive-shado {
     position: relative;
-    height: 130vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.543);
     z-index: 2;
-   
-    
 }
-.aut-heder-one{
-  margin: 0 auto;
-    color:white;
+
+/* Header Styling */
+.aut-heder-one {
+    margin: 0 auto;
+    color: white;
     max-width: 1200px;
     padding: 10px;
     height: 100vh;
-    
-  
 }
 
-.aut-heder-one h1{
-   margin-top: 20%;
+.aut-heder-one h1 {
+    margin-top: 20%;
     font-size: 3rem;
     margin-bottom: 0;
+    animation: slideInFromLeft 1s ease-out; /* Slide-in animation */
 }
-.divforline{
+
+.divforline {
     height: 1px;
     width: 100%;
     background-color: white;
@@ -45,103 +50,240 @@ body{
     margin-top: 0;
 }
 
-.auto-continer-parti{
+/* Content Styling */
+.auto-continer-parti {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-  
 }
-.auto-heder-two{
+
+.auto-heder-two {
     flex: 1;
-  height: auto;
-   padding: 10px;
+    height: auto;
+    padding: 10px;
+    animation: fadeIn 1.5s ease-in; /* Fade-in animation */
 }
-.auto-img-cont{
+
+.auto-img-cont {
     margin: 30px 10px;
     flex: 1;
     background-color: rgba(0, 0, 0, 0.6);
-     height: 400px;
-     background-image: url(../assets/auto-shackhand.webp);
+    height: 400px;
+    background-image: url(../assets/auto-shackhand.webp);
     width: 100%;
     background-size: cover;
     background-position: center;
-    border-radius:50px ;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
+    animation: zoomIn 1.5s ease; /* Zoom-in animation */
 }
-.auto-heder-two h2{
- font-size: 3rem;
+
+/* Typography */
+.auto-heder-two h2 {
+    font-size: 3rem;
 }
-.auto-heder-two p{
+
+.auto-heder-two p {
     font-size: 1.5rem;
 }
-@media (max-width: 1020px) {
-    .auto-heder-two{
-        max-width: 1024px;
-        min-width:511px;
-      
-       
-    }
-    .auto-img-cont{
-       max-width:  604px;
-        min-width: 511px;
-       margin: 20px auto;
-    }
-  }
-  @media (max-width: 585px) {
-    .auto-heder-two{
-       width: 100%;
-        min-width: 293px;
-    }
-    .auto-img-cont{
-        width: 100%;
-        min-width: 293px;
-       
-    }
-  }
-  @media (max-width: 345px) {
-    .auto-heder-two{
-       width: 100%;
-        min-width: 173px;
-    }
-    .auto-img-cont{
-        width: 100%;
-        min-width: 173px;
-       
-    }
-  }
-  @media (max-width: 580px) {
-    .auto-heder-two h2{
-        font-size: 2rem;
-       }
-       .auto-heder-two p{
-        font-size: 1.2rem;
-    }
-  }
-  @media (max-width: 330px) {
-    .auto-heder-two h2{
-        font-size: 1.7rem;
-       }
-       .auto-heder-two p{
-        font-size: 1rem;
-    }
-  }
-  .auto-ctas-button{
+
+/* Button Styling */
+.auto-ctas-button {
     background-color: black;
     border-radius: 40px;
     padding: 10px 30px;
     border: 3px solid white;
     color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for hover effect */
+}
 
-  }
+.auto-ctas-button:hover {
+    background-color: darkblue;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
 
-  .auto-sol-tab{
+/* Solution Tab Section */
+.auto-sol-tab {
     margin: 0 auto;
     max-width: 1200px;
-  }
-  .auto-sol-tab-heading h1{
+}
+
+.auto-sol-tab-heading h1 {
+    padding: 10px;
     color: darkblue;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    animation: slideInFromRight 1.5s ease; /* Slide-in animation */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1020px) {
+    .auto-heder-two {
+        max-width: 1024px;
+        min-width: 511px;
+    }
+    .auto-img-cont {
+        max-width: 604px;
+        min-width: 511px;
+        margin: 20px auto;
+    }
+    .automotive-main {
+      height: 130vh;
+     
   }
+  .automotive-shado {
+    height: 130vh;
+  
+}
+  
+}
+
+@media (max-width: 585px) {
+    .auto-heder-two {
+        width: 100%;
+        min-width: 293px;
+    }
+    .auto-img-cont {
+        width: 100%;
+        min-width: 293px;
+    }
+}
+
+@media (max-width: 345px) {
+    .auto-heder-two {
+        width: 100%;
+        min-width: 173px;
+    }
+    .auto-img-cont {
+        width: 100%;
+        min-width: 173px;
+    }
+}
+
+@media (max-width: 580px) {
+    .auto-heder-two h2 {
+        font-size: 2rem;
+    }
+    .auto-heder-two p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .auto-heder-two h2 {
+        font-size: 1.7rem;
+    }
+    .auto-heder-two p {
+        font-size: 1rem;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+  /*service cards*/
+
+  .auto-servis-card{
+    margin: 0 auto;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+ 
+    position: relative;
+   
+  }
+
+.contant-auto-box{
+  max-width: 320px;
+  min-width: 310px;
+  height: 280px;
+  background-color: rgba(223, 223, 223, 0.356);
+  position:absolute;
+  top: 75px;
+ right: 5px;
+ border-radius: 10px;
+ box-shadow: 0px 4px 10px rgba(188, 169, 169, 0.3);
+}
+.autocard-cont h1 {
+  color: rgb(35, 36, 87);
+  margin-top: 90px;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+.autocard-cont p {
+  margin-top: 0;
+  color: black;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+.circle-for-img-auto-serv{
+  max-width:170px;
+  min-width: 150px;
+  min-height: 150px;
+  max-height: 170px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(174, 174, 174, 0.3);
+}
+.auto-servis-card img{
+ max-width: 100px;
+ 
+}
+.auto-flex-table-autoservice{
+  max-width: 1100px;
+  margin: 0 auto;
+  display:flex;
+ flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
