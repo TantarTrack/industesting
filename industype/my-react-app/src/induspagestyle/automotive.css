@@ -47,7 +47,7 @@ body {
     height: 1px;
     width: 100%;
     background-color: white;
-    max-width: 90%;
+    max-width: 80%;
     margin-top: 0;
 }
 
@@ -83,10 +83,12 @@ body {
 /* Typography */
 .auto-heder-two h2 {
     font-size: 3rem;
+    font-weight: 400;
 }
 
 .auto-heder-two p {
     font-size: 1.5rem;
+    
 }
 
 /* Button Styling */
@@ -116,6 +118,7 @@ body {
 
 .auto-sol-tab-heading h1 {
     padding: 10px;
+    font-weight: 500;
     color: rgb(32, 32, 115);
     font-size: 2.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -179,6 +182,7 @@ body {
 @media (max-width: 330px) {
     .auto-heder-two h2 {
         font-size: 1.7rem;
+        
     }
     .auto-heder-two p {
         font-size: 1rem;
@@ -256,6 +260,7 @@ body {
 .autocard-cont h1 {
   color: rgb(35, 36, 87);
   margin-top: 90px;
+  font-weight: 500;
   margin-bottom: 0;
   font-size: 1.3rem;
 }
@@ -361,6 +366,7 @@ body {
   background-color: black;
   padding: 15px;
   border-radius: 20px;
+  font-weight: 500;
 }
 
 .auto-phot-contant-div{
@@ -393,6 +399,7 @@ body {
 .adv-content-auto-div h1{
   color: black;
   text-align: start;
+  font-weight: 400;
 }
 .adv-content-auto-div p{
   padding: 20px;
@@ -411,6 +418,7 @@ body {
     max-width: 100%;
    
    }
+
   
   }
 
@@ -439,6 +447,7 @@ body {
     }
     .auto-last-div-allok h1{
       color: white;
+      font-weight: 500;
     }
    
     .auto-ctas-button-last{
