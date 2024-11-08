@@ -1,7 +1,7 @@
 import "../induspagestyle/automotive.css"
 import { Link } from "react-router-dom";
-
 import Automotivecardservices from "./auto-serv-type";
+import Autoadvatiaing from "./auto-after-serv-cont";
 
 const Automotive = () =>{
     return(
@@ -23,7 +23,6 @@ const Automotive = () =>{
                      </Link>
                         </div>
                         <div className="auto-img-cont">
-                       
                             
                             </div>
                         </div>
@@ -36,6 +35,7 @@ const Automotive = () =>{
                      Expert IT Solutions Customized for the Automotive Sector.
                      </h1>
                     <Automotivecardservices/>
+                    <Autoadvatiaing/>
                     </div>
                 </div>
             </div>
